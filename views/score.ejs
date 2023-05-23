@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="/score.css" />
+<link rel="stylesheet" href="/styles.css" />
+<div id="score-pannel-1">
+  <button class="accordion">
+    Code Quality <%- include('rating.ejs',{variable: 'first'}) %>
+  </button>
+
+  <div class="panel">
+    <textarea
+      class="detail form-control rounded-0 note-area"
+      id="detail_quality"
+      placeholder="Enter your feedback here"
+      row="1"
+    ></textarea>
+  </div>
+
+  <button class="accordion">
+    Problem Solving <%- include('rating.ejs',{variable: 'second'}) %>
+  </button>
+  <div class="panel">
+    <textarea
+      class="detail form-control rounded-0 note-area"
+      id="detail_solving"
+      placeholder="Enter your feedback here"
+      row="1"
+    ></textarea>
+  </div>
+
+  <button class="accordion">
+    Language Proficiency <%- include('rating.ejs',{variable: 'third'}) %>
+  </button>
+  <div class="panel">
+    <textarea
+      class="detail form-control rounded-0 note-area"
+      id="detail_proficiency"
+      placeholder="Enter your feedback here"
+      row="1"
+    ></textarea>
+  </div>
+
+  <button class="accordion">
+    Technical Communication <%- include('rating.ejs',{variable: 'fourth'}) %>
+  </button>
+  <div class="panel">
+    <textarea
+      class="detail form-control rounded-0 note-area"
+      id="detail_commnunication"
+      placeholder="Enter your feedback here"
+      row="1"
+    ></textarea>
+  </div>
+
+  <!-- 
+<button type="button" class="btn btn-primary btn-lg btn-block" id="submit-i" onclick="generatePdf()">Download Report</button>
+      -->
+</div>
